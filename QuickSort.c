@@ -2,7 +2,7 @@
 
 void quicksort(int [10], int, int);
 
-void quicksort(int x[10],int first,int last)
+void quicksort(int x[10], int first, int last)
 {   
     int i;
     int j;
@@ -46,15 +46,15 @@ int main()
     scanf("%d", &size);
 
     printf("Enter %d elements: ", size);
-    for(i = 0;i < size; i++){
+    for(i = 0; i < size; i++){
         scanf("%d", &x[i]);
     }
         
     quicksort(x,0,size-1);
 
     printf("Sorted elements: ");
-    for(i = 0;i < size; i++){
-        printf(" %d",x[i]);
+    for(i = 0; i < size; i++){
+        printf(" %d", x[i]);
     }
         
     return 0;
